@@ -1,10 +1,77 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-project</title>
+    <title>Evaluation Tailwind</title>
   </head>
-  <body>
+  <body
+    class=" flex  from-bg-rose from-bg-bleu justify-center bg-gradient-to-r"
+  >
+    <section
+      class="align-center bg-fond-colonne-gauche mt-10 flex w-200 justify-center rounded-lg p-4 shadow-lg"
+    >
+      <section
+        class="flex flex-1 flex-col justify-center overflow-hidden bg-pink-100 p-8"
+      >
+        <p class="mb-2 text-sm font-medium">Individual Plan</p>
+        <h2 class="mb-8 text-5xl font-bold ">
+          $9.99<span class="text-lg font-normal">/mo</span>
+        </h2>
+        <ul class="flex flex-col items-center">
+          <li class="">
+            <span class="h-2 w-2"></span>
+            Use on up to 2 devices
+          </li>
+          <li class="">
+            <span class="h-2 w-2"></span>
+            10g free cloud storage
+          </li>
+          <li class="">
+            <span class="h-2 w-2"></span>
+            No ads while listening
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h1>Payment Info</h1>
+        <span class="flex">
+          <p>Card Number</p>
+          <input
+            type="number"
+            placeholder="Card Number"
+            class="mb-4 rounded border p-2"
+          />
+          <p>CVV</p>
+          <input
+            type="number"
+            placeholder="CVV"
+            class="mb-4 w-2 rounded border p-2"
+          />
+        </span>
+        <span class="flex">
+          <p>Name on Card</p>
+          <input
+            type="text"
+            placeholder="Name on Card"
+            class="mb-4 rounded border p-2"
+          />
+          <p>MM</p>
+          <input
+            type="number"
+            placeholder="MM"
+            class="mb-4 w-2 rounded border p-2"
+          />
+          <p>YY</p>
+          <input
+            type="number"
+            placeholder="YY"
+            class="mb-4 w-2 rounded border p-2"
+          />
+        </span>
+        <button class="">Place Order</button>
+      </section>
+    </section>
   </body>
 </html>

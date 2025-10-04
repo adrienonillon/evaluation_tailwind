@@ -6,71 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evaluation Tailwind</title>
   </head>
-  <body
-    class=" flex  from-bg-rose from-bg-bleu justify-center bg-gradient-to-r"
-  >
-    <section
-      class="align-center bg-fond-colonne-gauche mt-10 flex w-200 justify-center rounded-lg p-4 shadow-lg"
-    >
-      <section
-        class="flex flex-1 flex-col justify-center overflow-hidden bg-pink-100 p-8"
-      >
-        <p class="mb-2 text-sm font-medium">Individual Plan</p>
-        <h2 class="mb-8 text-5xl font-bold ">
-          $9.99<span class="text-lg font-normal">/mo</span>
+  <body class="min-h-screen flex bg-gradient-to-r from-bg-rose to-bg-bleu justify-center items-center">
+    <section class="bg-white flex h-150 w-300 justify-center rounded-lg shadow-lg">
+      <section class="flex flex-1 flex-col justify-center items-center text-center p-2 relative bg-fond-colonne-gauche">
+        <button class="absolute top-20 -left-6 w-12 h-12 bg-pink-400 rounded-full flex items-center justify-center text-white text-xl">
+          <img src="./assets/back.svg" alt="arrow" class="w-6 h-6" />
+        </button>
+        
+        <p class="">Individual Plan</p>
+        <h2 class="mb-8 text-5xl font-bold text-gray-900">
+          $9.99<span class="text-lg font-normal text-gray-500">/mo</span>
         </h2>
-        <ul class="flex flex-col items-center">
-          <li class="">
-            <span class="h-2 w-2"></span>
+        <ul class="flex flex-col gap-4 mb-8 text-center">
+          <li class="flex items-center text-gray-700">
+            <span class="w-3 h-3 bg-teal-500 rounded-full "></span>
             Use on up to 2 devices
           </li>
-          <li class="">
-            <span class="h-2 w-2"></span>
-            10g free cloud storage
+          <li class="flex items-center text-gray-700">
+            <span class="w-3 h-3 bg-teal-500 rounded-full "></span>
+            10G free cloud storage
           </li>
-          <li class="">
-            <span class="h-2 w-2"></span>
+          <li class="flex items-center text-gray-700">
+            <span class="w-3 h-3 bg-teal-500 rounded-full "></span>
             No ads while listening
           </li>
         </ul>
       </section>
-      <section>
-        <h1>Payment Info</h1>
-        <span class="flex">
-          <p>Card Number</p>
-          <input
-            type="number"
-            placeholder="Card Number"
-            class="mb-4 rounded border p-2"
-          />
-          <p>CVV</p>
-          <input
-            type="number"
-            placeholder="CVV"
-            class="mb-4 w-2 rounded border p-2"
-          />
-        </span>
-        <span class="flex">
-          <p>Name on Card</p>
-          <input
-            type="text"
-            placeholder="Name on Card"
-            class="mb-4 rounded border p-2"
-          />
-          <p>MM</p>
-          <input
-            type="number"
-            placeholder="MM"
-            class="mb-4 w-2 rounded border p-2"
-          />
-          <p>YY</p>
-          <input
-            type="number"
-            placeholder="YY"
-            class="mb-4 w-2 rounded border p-2"
-          />
-        </span>
-        <button class="">Place Order</button>
+      
+      <section class="flex flex-1 flex-col justify-center items-center  bg-gray-50 relative">
+
+        <header class="bg-yellow-400 text-center w-50 h-12 mx-auto flex justify-center items-center absolute -top-6">
+          <h1 class="font-bold">Payment Info</h1>
+        </header>
+
+
+        <form class="flex flex-col gap-6 justify-center ">
+
+          <fieldset class="flex gap-4">
+            <label class="flex-1 relative">
+              <span class="block text-sm text-gray-600 mb-2">Card number</span>
+              <input type="text" value="4400 6678 9020 0062" 
+                     class="w-full h-12 rounded border border-gray-300 p-3 pr-12"/>
+              <span class="absolute right-3 top-9 text-blue-600 font-bold"><img src="./assets/visa.svg" alt="" class="w-6 h-6 absolute z-index-10 top-1/2 right-20"></span>
+            </label>
+            <label class="w-24">
+              <span class="block text-sm text-gray-600 mb-2">CVV</span>
+              <input type="text" value="299" 
+                     class="w-full h-12 rounded border border-gray-300 p-3 text-center">
+            </label>
+          </fieldset>
+
+          <fieldset class="flex gap-4">
+            <label class="flex-1">
+              <span class="block text-sm text-gray-600 mb-2">Name on card</span>
+              <input type="text" value="JENNIFER" 
+                     class="w-full h-12  rounded border border-gray-300 p-3">
+            </label>
+            <label class="w-16">
+              <span class="block text-sm text-gray-600 mb-2">MM</span>
+              <input type="text" value="12" 
+                     class="w-full h-12 rounded border border-gray-300 p-3 text-center">
+            </label>
+            <label class="w-16">
+              <span class="block text-sm text-gray-600 mb-2">YY</span>
+              <input type="text" value="24" 
+                     class="w-full h-12 rounded border border-gray-300 p-3 text-center">
+            </label>
+          </fieldset>
+        </form>
+
+          <button type="submit" 
+                  class="w-50 h-12 bg-teal-600 text-white font-bold py-4 rounded-3xl cursor-pointer flex justify-center items-center text-center">
+            PLACE ORDER
+          </button>
       </section>
     </section>
   </body>

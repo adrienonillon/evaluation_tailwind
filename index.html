@@ -6,80 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evaluation Tailwind</title>
   </head>
-  <body class="min-h-screen flex bg-gradient-to-r from-bg-rose to-bg-bleu justify-center items-center">
-    <section class="bg-white flex h-150 w-300 justify-center rounded-lg shadow-lg">
-      <section class="flex flex-1 flex-col justify-center items-center text-center p-2 relative bg-fond-colonne-gauche">
-        <button class="absolute top-20 -left-6 w-12 h-12 bg-pink-400 rounded-full flex items-center justify-center text-white text-xl">
-          <img src="./assets/back.svg" alt="arrow" class="w-6 h-6" />
+ <body class=" min-h-screen flex flex-col items-center justify-center p-6">
+  <main class="flex flex-col items-center justify-center my-10 w-full max-w-xl ">   
+    <nav class="w-full mb-12">
+      <section class="flex justify-between items-center mb-8 absolute top-6 w-140">
+        <h1 class="text-2xl font-bold ">devfinder</h1>
+        <button class="flex items-center gap-2 text-sm font-bold ">
+          <span>DARK</span>
+          <img src="./assets/icon-moon.svg" alt="" class="w-5 h-5">
         </button>
-        
-        <p class="">Individual Plan</p>
-        <h2 class="mb-8 text-5xl font-bold text-gray-900">
-          $9.99<span class="text-lg font-normal text-gray-500">/mo</span>
-        </h2>
-        <ul class="flex flex-col gap-4 mb-8 text-center">
-          <li class="flex items-center text-gray-700">
-            <span class="w-3 h-3 bg-teal-500 rounded-full "></span>
-            Use on up to 2 devices
-          </li>
-          <li class="flex items-center text-gray-700">
-            <span class="w-3 h-3 bg-teal-500 rounded-full "></span>
-            10G free cloud storage
-          </li>
-          <li class="flex items-center text-gray-700">
-            <span class="w-3 h-3 bg-teal-500 rounded-full "></span>
-            No ads while listening
-          </li>
-        </ul>
       </section>
-      
-      <section class="flex flex-1 flex-col justify-center items-center  bg-gray-50 relative">
-
-        <header class="bg-yellow-400 text-center w-50 h-12 mx-auto flex justify-center items-center absolute -top-6">
-          <h1 class="font-bold">Payment Info</h1>
-        </header>
-
-
-        <form class="flex flex-col gap-6 justify-center ">
-
-          <fieldset class="flex gap-4">
-            <label class="flex-1 relative">
-              <span class="block text-sm text-gray-600 mb-2">Card number</span>
-              <input type="text" value="4400 6678 9020 0062" 
-                     class="w-full h-12 rounded border border-gray-300 p-3 pr-12"/>
-              <span class="absolute right-3 top-9 text-blue-600 font-bold"><img src="./assets/visa.svg" alt="" class="w-6 h-6 absolute z-index-10 top-1/2 right-20"></span>
-            </label>
-            <label class="w-24">
-              <span class="block text-sm text-gray-600 mb-2">CVV</span>
-              <input type="text" value="299" 
-                     class="w-full h-12 rounded border border-gray-300 p-3 text-center">
-            </label>
-          </fieldset>
-
-          <fieldset class="flex gap-4">
-            <label class="flex-1">
-              <span class="block text-sm text-gray-600 mb-2">Name on card</span>
-              <input type="text" value="JENNIFER" 
-                     class="w-full h-12  rounded border border-gray-300 p-3">
-            </label>
-            <label class="w-16">
-              <span class="block text-sm text-gray-600 mb-2">MM</span>
-              <input type="text" value="12" 
-                     class="w-full h-12 rounded border border-gray-300 p-3 text-center">
-            </label>
-            <label class="w-16">
-              <span class="block text-sm text-gray-600 mb-2">YY</span>
-              <input type="text" value="24" 
-                     class="w-full h-12 rounded border border-gray-300 p-3 text-center">
-            </label>
-          </fieldset>
-        </form>
-
-          <button type="submit" 
-                  class="w-50 h-12 bg-teal-600 text-white font-bold py-4 rounded-3xl cursor-pointer flex justify-center items-center text-center">
-            PLACE ORDER
-          </button>
+      <section class="flex items-center rounded-2xl shadow-lg p-4 mt-16">
+        <img src="./assets/icon-search.svg" alt="" class="w-6 h-6 ml-2 mr-4">
+        <input type="text" placeholder="Search GitHub username..." class="flex-1 outline-none text-lg" />
+        <button class="">Search</button>
+      </section>      
+    </nav>
+    <section class="rounded-2xl shadow-lg p-8 mt-8 w-full">
+      <section class="flex items-start gap-8 mb-10">
+        <img src="./assets/ProfileGit.png" alt="" class="w-20 h-20 rounded-full">
+        <section class="flex-1">
+          <h2 class="font-bold  mb-2">The Octocat</h2>
+          <p class=" text-lg mb-4">@octocat</p>
+          <p class="">Joined 25 Jan 2011</p>
+        </section>
       </section>
+      <section class="mb-10">
+        <p class=" mb-10 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur maxime veniam autem tempora.</p>
+        <section class="rounded-xl p-8 flex justify-around text-center">
+          <article>
+            <p class=" text-sm mb-2">Repos</p>
+            <p class=" text-2xl font-bold">8</p>
+          </article>
+          <article>
+            <p class=" text-sm mb-2">Followers</p>
+            <p class=" text-2xl font-bold">3938</p>
+          </article>
+          <article>
+            <p class=" text-sm mb-2">Following</p>
+            <p class=" text-2xl font-bold">9</p>
+          </article>
+        </section>
+      </section>  
+      <footer class="grid grid-cols-2 gap-y-6 gap-x-8">
+        <article class="flex items-center gap-4">
+          <img src="./assets/icon-location.svg" alt="" class="w-5 h-5">
+          <p class="">San Francisco</p>
+        </article>
+        <article class="flex items-center gap-4 opacity-50">
+          <img src="./assets/icon-twitter.svg" alt="" class="w-5 h-5">
+          <p class="">No Avialble</p>            
+        </article>
+        <article class="flex items-center gap-4">
+          <img src="./assets/icon-website.svg" alt="" class="w-5 h-5">
+          <a href="" class=" hover:underline">https://github.blog</a>            
+        </article>
+        <article class="flex items-center gap-4">
+          <img src="./assets/icon-company.svg" alt="" class="w-5 h-5">
+          <p class="">@github</p>            
+        </article>
+      </footer>
     </section>
-  </body>
+  </main>
+ </body>
 </html>
